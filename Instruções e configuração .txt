@@ -1,0 +1,7 @@
+================== INSTRUÇÕES =============================================
+	- utilizado bando de dados Sql Server - 	
+	- As configurações para conexão com banco estão definidas no diretório : 'Educasfera/App.config '
+	  altere de acordo com o SqlServer local da maquina instalada.
+	-O arquivo 'Educasfera.sql' contém o Script para criação do banco de dados.	
+==========================================================================
+	 

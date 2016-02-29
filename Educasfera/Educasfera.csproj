@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CD4002D-0109-4A96-AE2A-FEC05EF76F8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Educasfera</RootNamespace>
+    <AssemblyName>Educasfera</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Aluno.cs" />
+    <Compile Include="Classes\ConexaoDB.cs" />
+    <Compile Include="Classes\Curso.cs" />
+    <Compile Include="Classes\Licao.cs" />
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormBlocoNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormBlocoNotas.Designer.cs">
+      <DependentUpon>FormBlocoNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormCadastrarAlunos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCadastrarAlunos.Designer.cs">
+      <DependentUpon>FormCadastrarAlunos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormCadastrarCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCadastrarCursos.Designer.cs">
+      <DependentUpon>FormCadastrarCursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormCalculadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCalculadora.Designer.cs">
+      <DependentUpon>FormCalculadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormMatricularAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormMatricularAluno.Designer.cs">
+      <DependentUpon>FormMatricularAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormPesquisaAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormPesquisaAluno.Designer.cs">
+      <DependentUpon>FormPesquisaAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormPesquisaCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormPesquisaCurso.Designer.cs">
+      <DependentUpon>FormPesquisaCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormPesquisaLicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormPesquisaLicao.Designer.cs">
+      <DependentUpon>FormPesquisaLicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormRelatorioAlunosMatriculados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormRelatorioAlunosMatriculados.Designer.cs">
+      <DependentUpon>FormRelatorioAlunosMatriculados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormBlocoNotas.resx">
+      <DependentUpon>FormBlocoNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormCadastrarAlunos.resx">
+      <DependentUpon>FormCadastrarAlunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormCadastrarCursos.resx">
+      <DependentUpon>FormCadastrarCursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormCalculadora.resx">
+      <DependentUpon>FormCalculadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormMatricularAluno.resx">
+      <DependentUpon>FormMatricularAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormPesquisaAluno.resx">
+      <DependentUpon>FormPesquisaAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormPesquisaCurso.resx">
+      <DependentUpon>FormPesquisaCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormPesquisaLicao.resx">
+      <DependentUpon>FormPesquisaLicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormRelatorioAlunosMatriculados.resx">
+      <DependentUpon>FormRelatorioAlunosMatriculados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\Educasfera.Classes.Aluno.datasource" />
+    <None Include="Properties\DataSources\Educasfera.Classes.ConexaoDB.datasource" />
+    <None Include="Properties\DataSources\Educasfera.Classes.Curso.datasource" />
+    <None Include="Properties\DataSources\Educasfera.Classes.Licao.datasource" />
+    <None Include="Properties\DataSources\Educasfera.Formularios.FormBlocoNotas.datasource" />
+    <None Include="Properties\DataSources\Educasfera.Formularios.FormCadastrarAlunos.datasource" />
+    <None Include="Properties\DataSources\Educasfera.Formularios.FormCadastrarCursos.datasource" />
+    <None Include="Properties\DataSources\Educasfera.Formularios.FormCalculadora.datasource" />
+    <None Include="Properties\DataSources\Educasfera.Formularios.FormMatricularAluno.datasource" />
+    <None Include="Properties\DataSources\Educasfera.Formularios.FormPesquisaAluno.datasource" />
+    <None Include="Properties\DataSources\Educasfera.Formularios.FormPesquisaCurso.datasource" />
+    <None Include="Properties\DataSources\Educasfera.Formularios.FormPesquisaLicao.datasource" />
+    <None Include="Properties\DataSources\Educasfera.Formularios.FormRelatorioAlunosMatriculados.datasource" />
+    <None Include="Properties\DataSources\Educasfera.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Educasfera.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Principal.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoazul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\netvibes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userAlter48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1588_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lista.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2975_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7659_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\290713163104_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\290713162023_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8439_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_Refresh-48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_Refresh-32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2982_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\290713161618_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete-icon32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\290713162041_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userAlter32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userDelete32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-icon32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7660_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6169_32x321.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
