@@ -1,5 +1,5 @@
 # Sistema para controle de Alunos
-
+(coloquei aqui no git pra nunca esquecer de como comecei, e que evolução é possível, necessária e deve ser constante )
 Pequeno sistema para controle de Alunos.
 Contém 1 bloco de notas e 1 calculadora .
 Pre-requisito para vaga de Desenvolvedor na Educasfera.
